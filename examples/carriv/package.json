@@ -1,0 +1,22 @@
+{
+	"name": "carriv-film",
+	"version": "1.0.0",
+	"private": true,
+	"description": "The Carriv product film — the reference example for reelkit.",
+	"type": "module",
+	"scripts": {
+		"studio": "remotion studio",
+		"render": "remotion render Carriv out/carriv.mp4 --codec=h264 --crf=16",
+		"render:scene": "remotion render",
+		"stills": "node ../../tools/stills.mjs --film=carriv",
+		"upgrade": "remotion upgrade"
+	},
+	"dependencies": {
+		"@remotion/cli": "4.0.496",
+		"@remotion/google-fonts": "4.0.496",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"reelkit": "*",
+		"remotion": "4.0.496"
+	}
+}

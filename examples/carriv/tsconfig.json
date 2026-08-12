@@ -1,0 +1,10 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"reelkit": ["../../packages/core/src/index.ts"]
+		}
+	},
+	"include": ["src", "remotion.config.ts"]
+}

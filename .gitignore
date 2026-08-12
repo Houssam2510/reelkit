@@ -1,0 +1,15 @@
+node_modules/
+out/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+.remotion/
+.cache/
+
+# NOT ignored, on purpose: examples/*/public/audio/vo/*.mp3
+# The voice-over is generated (`npm run vo`) but vendored, so a fresh clone
+# renders the film without an API key and CI can prove the cut still composes.
+# It is ~2 MB. If your film's narration grows past a few minutes, ignore it
+# and generate in CI instead.

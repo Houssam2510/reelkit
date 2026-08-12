@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run lint
+      - run: npm run typecheck
+
+  # A render is the only test that actually proves the film still composes.
+  # One still per scene is cheap (seconds) and catches the whole class of
+  # "it typechecks but throws at frame 0" failures.
+  stills:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx remotion browser ensure
+        working-directory: examples/carriv
+      - run: npm run stills
+      - uses: actions/upload-artifact@v4
+        with:
+          name: contact-sheet
+          path: examples/carriv/out/stills/

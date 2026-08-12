@@ -1,0 +1,69 @@
+{
+	"voice": "Brian",
+	"model": "eleven_multilingual_v2",
+	"settings": {
+		"stability": 0.5,
+		"similarity_boost": 0.75,
+		"style": 0.08,
+		"use_speaker_boost": true,
+		"speed": 0.98
+	},
+	"fps": 30,
+	"grid": 15,
+	"direction": "Calm, precise, a peer rather than a pitch. The product's whole claim is honesty, so anything that sounds like a hard sell works against the film. Downward inflection at sentence ends; no upward commercial lilt. Mid-to-low register, narration — never trailer, never energetic. One stressed word per line, no more; the `emphasis` field says which.",
+	"lines": [
+		{
+			"id": "01-hook",
+			"text": "Most resumes never reach a human. Software reads them first, and it's looking for exact words.",
+			"emphasis": "exact",
+			"leadIn": 0.5,
+			"tail": 0.7,
+			"min": 8
+		},
+		{
+			"id": "02-reveal",
+			"text": "Carriv takes the resume you already have and rewrites it for the one job you're applying to.",
+			"emphasis": "already",
+			"tail": 0.8
+		},
+		{
+			"id": "03-paste",
+			"text": "Paste the posting, pick a profile, generate. One credit covers the resume, the letter, and the score.",
+			"emphasis": "one"
+		},
+		{
+			"id": "04-document",
+			"text": "What comes out is a single column. No tables, no graphics, no sidebars — typeset like LAY-tek, and parsed cleanly by the systems large companies run. Always one page.",
+			"emphasis": "always",
+			"tail": 0.9
+		},
+		{
+			"id": "05-ats",
+			"text": "Then a real score. Every keyword the posting wants, matched against yours — and for each gap, a rewrite that stays true to your experience.",
+			"emphasis": "real",
+			"tail": 0.9
+		},
+		{
+			"id": "06-truth",
+			"text": "Every edit is listed for you to read. Nothing is ever added that isn't already yours.",
+			"emphasis": "nothing"
+		},
+		{
+			"id": "07-tracker",
+			"text": "Then track every application — draft, applied, interview, offer — with your own notes beside each one.",
+			"emphasis": "every"
+		},
+		{
+			"id": "08-extension",
+			"text": "And with the Chrome extension, tailor straight from the job page itself.",
+			"emphasis": "straight",
+			"tail": 0.6
+		},
+		{
+			"id": "09-cta",
+			"text": "Three applications free, no card required. Carriv — a resume built for the job.",
+			"emphasis": "free",
+			"tail": 1.4
+		}
+	]
+}

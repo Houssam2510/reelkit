@@ -1,0 +1,17 @@
+{
+	"generatedAt": "seed",
+	"voice": "placeholder",
+	"model": "seed",
+	"_comment": "SEED DATA. These durations were measured from the vendored placeholder takes in public/audio/vo, so the film lays out correctly before anyone has an ElevenLabs key. The `words` arrays are empty, which is why burned-in captions stay dark until you run `npm run vo`. The `hash` values are deliberately invalid, so the first real run regenerates every line.",
+	"lines": {
+		"01-hook": { "durationSec": 6.87, "hash": "seed", "words": [] },
+		"02-reveal": { "durationSec": 4.89, "hash": "seed", "words": [] },
+		"03-paste": { "durationSec": 7.04, "hash": "seed", "words": [] },
+		"04-document": { "durationSec": 11.98, "hash": "seed", "words": [] },
+		"05-ats": { "durationSec": 9.45, "hash": "seed", "words": [] },
+		"06-truth": { "durationSec": 5.64, "hash": "seed", "words": [] },
+		"07-tracker": { "durationSec": 6.72, "hash": "seed", "words": [] },
+		"08-extension": { "durationSec": 4.26, "hash": "seed", "words": [] },
+		"09-cta": { "durationSec": 6.15, "hash": "seed", "words": [] }
+	}
+}

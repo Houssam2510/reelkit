@@ -1,0 +1,11 @@
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"reelkit": ["./packages/core/src/index.ts"],
+			"reelkit/*": ["./packages/core/src/*"]
+		}
+	},
+	"include": ["packages/*/src/**/*", "examples/*/src/**/*", "examples/*/*.ts"]
+}

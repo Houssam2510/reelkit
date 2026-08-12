@@ -1,0 +1,39 @@
+{
+	"name": "reelkit-monorepo",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Reelkit — a Remotion toolkit for cinematic product films, with an ElevenLabs voice-over pipeline.",
+	"license": "MIT",
+	"type": "module",
+	"engines": {
+		"node": ">=20"
+	},
+	"workspaces": [
+		"packages/*",
+		"examples/*"
+	],
+	"scripts": {
+		"studio": "npm run studio --workspace carriv-film",
+		"render": "npm run render --workspace carriv-film",
+		"stills": "npm run stills --workspace carriv-film",
+		"vo": "node tools/vo.mjs",
+		"voices": "node tools/voices.mjs",
+		"shots": "node tools/shots.mjs",
+		"typecheck": "tsc --noEmit -p tsconfig.json",
+		"lint": "eslint .",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"check": "npm run format:check && npm run lint && npm run typecheck"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.20.0",
+		"@types/node": "^22.13.1",
+		"@types/react": "^19.0.8",
+		"@types/react-dom": "^19.0.3",
+		"eslint": "^9.20.0",
+		"eslint-plugin-react-hooks": "^5.1.0",
+		"prettier": "^3.5.0",
+		"typescript": "^5.7.3",
+		"typescript-eslint": "^8.24.0"
+	}
+}
